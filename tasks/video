@@ -1,0 +1,10 @@
+Task: video 
+Description: debian-openstudio video  packages
+ This metapackage will install Debian packages for use in 
+ video of debian-openstudio.
+
+Depends: mplayer
+
+Depends: vlc
+#Suggests: sug-pkg1, ...
+

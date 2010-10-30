@@ -1,0 +1,25 @@
+Task: openstudio-audio
+Section: debian-openstudio
+Description: Packages for Debian-openstudio audio  packages
+ This metapackage will install Debian packages for use in 
+ audio of debian-openstudio.
+Relevance: 10
+Key: 
+ openstudio-audio
+Packages: list
+ qjackctl
+ zynaddsubfx
+ audacity
+
+Task: openstudio-video
+Section: debian-openstudio
+Description: debian-openstudio video  packages
+ This metapackage will install Debian packages for use in 
+ video of debian-openstudio.
+Relevance: 10
+Key: 
+ openstudio-video
+Packages: list
+ mplayer
+ vlc
+
