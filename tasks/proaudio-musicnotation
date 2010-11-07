@@ -1,0 +1,20 @@
+Task: proaudio-muscicnotation
+Description: Proaudio packages for recording music, sounds, audio.
+ 
+Depends: musescore
+
+Depends: lilypond
+
+Suggests: nted
+
+Suggests: frescobaldi
+
+Suggests: denemo
+
+Suggests: rosegarden 
+
+
+
+    
+
+

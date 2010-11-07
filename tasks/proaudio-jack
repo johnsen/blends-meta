@@ -1,0 +1,27 @@
+Task: proaudio-JACK
+Description: Openstudio pro audio JACK (Jack Audio Connection Kit) and ALSA related packages
+ This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
+
+Depends: jackd 
+
+Depends: qjackctl 
+
+Depends: a2jmidid 
+
+Depends: jack-tools 
+
+Depends: alsa-tools-gui
+
+Depends: alsa-tools
+
+Depends: sysv-rc-conf
+
+Suggests: htop
+
+Suggests: patchage
+
+
+#alsa-tools alsa-tools-gui ffado-dbus-server ffado-mixer-qt4 ffado-tools jack-tools jack-capture sysv-rc-conf
+#Suggests: htop
+
+

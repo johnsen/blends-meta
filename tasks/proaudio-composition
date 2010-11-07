@@ -1,0 +1,18 @@
+Task: proaudio-composition
+Description: Proaudio packages for recording music, sounds, audio.
+ 
+Depends: impro-visor
+
+#Depends: klick
+
+#Depends: gtklick
+
+#Depends: fmit
+
+#Suggests: impro-visor 
+
+#Depends: audacity 
+
+    
+
+

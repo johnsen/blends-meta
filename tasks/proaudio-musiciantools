@@ -1,0 +1,22 @@
+Task: proaudio-musician
+Description: Proaudio packages for recording music, sounds, audio.
+ 
+Depends: solfege
+
+Depends: klick
+
+Depends: gtklick
+
+Depends: fmit
+
+Suggests: stretchplayer
+
+Suggests: playitslowly
+
+Suggests: impro-visor 
+
+#Depends: audacity 
+
+    
+
+

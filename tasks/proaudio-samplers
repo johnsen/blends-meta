@@ -1,0 +1,12 @@
+Task: proaudio-samplers
+Description: Proaudio packages for software samplers.
+ 
+Depends: linuxsampler
+
+Depends: specimen
+
+#Suggests: traverso 
+
+    
+
+

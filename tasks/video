@@ -1,10 +1,25 @@
-Task: video 
-Description: debian-openstudio video  packages
- This metapackage will install Debian packages for use in 
- video of debian-openstudio.
+Task: Video
+Description: Openstudio Video packages
+ This metapackage will install Video software for use in 
+ openstudio.
 
-Depends: mplayer
+Depends: xjadeo 
 
-Depends: vlc
-#Suggests: sug-pkg1, ...
+Depends: qjadeo 
+
+Depends: blender 
+
+Depends: ffmpeg 
+
+Depends: ffmpeg2theora
+
+Depends: gjacktransport
+
+Suggests: kdenlive
+
+#Suggests: lives dvgrab freemix kino stopmotion subtitleeditor
+
+
+
+
 

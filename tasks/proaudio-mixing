@@ -1,0 +1,27 @@
+Task: proaudio-mixing
+Description: Proaudio packages for mixing and mastering your music.
+ This metapackage will install pro audio LADSPA, DSSI and LV2 plugins packages for openstudio.
+
+Depends: audacity 
+
+Depends: jamin 
+
+Depends: gcdmaster
+
+Depends: jkmeter
+
+Depends: meterbridge
+
+Depends: japa
+
+Depends: jdelay
+
+Depends: jack-mixer 
+
+Suggests: non-mixer
+
+Suggests: mhwaveedit
+
+Suggests: rezound
+
+

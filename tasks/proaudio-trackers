@@ -1,0 +1,11 @@
+Task: Trackers
+Description: Proaudio packages for mixing and mastering your music.
+ This metapackage will install pro audio LADSPA, DSSI and LV2 plugins packages for openstudio.
+
+Depends: jacker
+
+Depends: milkytracker
+
+Suggests: renoise
+
+

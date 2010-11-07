@@ -1,0 +1,28 @@
+Task: proaudio-plugins-ambisonics
+Description: Proaudio packages for installing LADSPA plugins, synths and virtual instruments.
+ This metapackage will install proaudio LADSPA plugins packages for openstudio.
+
+Depends: ambdec 
+
+Depends: amb-plugins  
+
+Depends: ardour
+
+Depends: jackd
+
+Depends: qjackctl
+
+Depends: japa
+
+Depends: jconvolver
+
+Depends: jconvolver-config-files
+
+Depends: drc
+
+Depends: aliki
+
+Depends: zita-rev1
+
+Suggests: non-mixer
+

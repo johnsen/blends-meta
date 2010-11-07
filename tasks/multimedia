@@ -1,0 +1,18 @@
+Task: Multimedia
+Description: Openstudio multimedia optimization
+ This metapackage will install additional 'consumer' multimedia  software for using in openstudio.
+
+Depends: vlc 
+
+Depends: vlc-plugin-jack 
+
+Depends: moc 
+
+Depends: smplayer
+
+Suggests: aqualung
+
+
+
+
+

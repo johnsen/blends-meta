@@ -1,0 +1,16 @@
+Task: proaudio-drums
+Description: Proaudio packages for drums & beats.
+ 
+Depends: hydrogen
+
+Depends: specimen 
+
+Suggests: jackbeat
+
+Suggests: lmms   
+
+Suggests: seq24
+
+Suggests: non-sequencer
+
+Suggests: puredata

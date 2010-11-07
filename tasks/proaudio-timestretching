@@ -1,0 +1,15 @@
+Task: proaudio-timestretching
+Description: Proaudio packages for stretching music and audio.
+ 
+Depends: paulstretch
+
+Depends: stretchplayer
+
+Suggests: rosegarden
+
+Suggests: ardour
+
+Suggests: qtractor
+    
+
+
