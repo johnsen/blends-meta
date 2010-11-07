@@ -16,6 +16,10 @@ Depends: japa
 
 Depends: jdelay
 
+Depends: openstudio-proaudio-plugins-lv2
+
+Depends: openstudio-proaudio-plugins-ladspa
+
 Depends: jack-mixer 
 
 Suggests: non-mixer

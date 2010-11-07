@@ -7,20 +7,201 @@ Maintainer: rosea grammostola <rosea.grammostola@gmail.com>
 Build-Depends-Indep: debhelper (>= 7.1), blends-dev
 Standards-Version: 3.9.1
 
-Package: openstudio-audio
+Package: openstudio-desktop
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: audacity, qjackctl, zynaddsubfx
-Suggests: ladspa-plugin
-Description: Packages for Debian-openstudio audio  packages
- This metapackage will install Debian packages for use in 
- audio of debian-openstudio.
+Recommends: grsync, gtk-recordmydesktop, htop, nautilus-open-terminal, pidgin, shutter, sysv-rc-conf, wget
+Suggests: epiphany-browser, thunderbird, xchat
+Description: Openstudio Desktop optimization
+ This metapackage will install additional Desktop software. 
+
+Package: openstudio-fluxbox
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: fluxbox, thunar
+Description: Openstudio metapackage for installing Fluxbox Window Manager.
+ This metapackage will install fluxbox WM and filebrowser thunar. If you don't want to have thunar, don't install this package and do 'sudo apt-get install fluxbox'.
+
+Package: openstudio-graphics
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: gimp, gimp-data, gimp-data-extras, gimp-gap, gimp-plugin-registry, gimp-ufraw
+Suggests: agave, blender, enblend, f-spot, fontforge, fontmatrix, gnome-raw-thumbnailer, hugin, inkscape, nautilus-image-converter, pstoedit, scribus, xsane, yafray
+Description: Openstudio pro audio synth packages
+ This metapackage will install pro audio synth packages for openstudio.
+
+Package: openstudio-multimedia
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: moc, smplayer, vlc, vlc-plugin-jack
+Suggests: aqualung
+Description: Openstudio multimedia optimization
+ This metapackage will install additional 'consumer' multimedia  software for using in openstudio.
+
+Package: openstudio-proaudio-audiotools
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: ardour, audacity, jackd, meterbridge, qjackctl, qtractor
+Suggests: jack-capture, mhwaveedit, proaudio-plugins-ladspa, proaudio-plugins-lv2, rezound, traverso
+Description: Proaudio packages for recording music, sounds, audio.
+
+Package: openstudio-proaudio-beats
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: hydrogen, specimen
+Suggests: jackbeat, lmms, non-sequencer, puredata, seq24
+Description: Proaudio packages for drums & beats.
+
+Package: openstudio-proaudio-djing
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: mixxx, xwax
+Suggests: jackeq, terminatorx
+Description: Openstudio pro audio DJ packages
+ This metapackage will install pro audio LADSPA, DSSI and LV2 plugins packages for openstudio.
+
+Package: openstudio-proaudio-firewire
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: ffado-mixer-qt4, ffado-tools, jackd, libffado2, patchage
+Suggests: a2jmidid, fado-dbus-server, jackd-firewire
+Description: Openstudio pro audio firewire  packages
+ This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
+
+Package: openstudio-proaudio-guitar
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: fmit, guitarix, jackd, jconvolver, jconvolver-config-files, qjackctl, rakarrack
+Suggests: chordata, frescobaldi, lilypond, musescore, playitslowly, proaudio-plugins-ladspa, proaudio-plugins-lv2, stretchplayer, tuxguitar
+Description: Proaudio packages for installing LADSPA plugins, synths and virtual instruments.
+ This metapackage will install proaudio LADSPA plugins packages for openstudio.
+
+Package: openstudio-proaudio-jack
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: alsa-tools, alsa-tools-gui, jack-tools, jackd, qjackctl, sysv-rc-conf
+Suggests: a2jmidid, htop, patchage
+Description: Openstudio pro audio JACK (Jack Audio Connection Kit) and ALSA related packages
+ This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
+
+Package: openstudio-proaudio-looping
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: kluppe, sooperlooper
+Suggests: ardour, freewheeling, rosegarden, seq24
+Description: Proaudio packages for looping music and audio.
+
+Package: openstudio-proaudio-midi
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: fluid-soundfont-gm, qsynth, qtractor, yoshimi
+Suggests: a2jmidid, aseqdump, jack-keyboard, jack-smf-utils, kmidimon, lmms, mididings, muse, non-sequencer, proaudio-plugins-dssi, rosegarden, seq24
+Description: Openstudio pro audio MIDI related packages
+ This metapackage will install pro audio MIDI related packages for openstudio.
+
+Package: openstudio-proaudio-mixing
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: audacity, gcdmaster, jamin, japa, jkmeter, meterbridge
+Suggests: jack-mixer, jdelay, mhwaveedit, non-mixer, rezound
+Description: Proaudio packages for mixing and mastering your music.
+ This metapackage will install pro audio LADSPA, DSSI and LV2 plugins packages for openstudio.
+
+Package: openstudio-proaudio-musiciantools
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: fmit, gtklick, klick, solfege
+Suggests: impro-visor, playitslowly, stretchplayer
+Description: Proaudio packages for recording music, sounds, audio.
+
+Package: openstudio-proaudio-musicnotation
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: lilypond, musescore
+Suggests: denemo, frescobaldi, nted, rosegarden
+Description: Proaudio packages for recording music, sounds, audio.
+
+Package: openstudio-proaudio-plugins-ambisonics
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: amb-plugins, ambdec, ardour, jackd, japa, jconvolver, jconvolver-config-files, qjackctl
+Suggests: aliki, drc, non-mixer, zita-rev1
+Description: Proaudio packages for installing LADSPA plugins, synths and virtual instruments.
+ This metapackage will install proaudio LADSPA plugins packages for openstudio.
+
+Package: openstudio-proaudio-plugins-dssi
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: calf-plugins, dssi-host-jack, dssi-utils, fluidsynth-dssi, hexter, whysynth, xsynth-dssi
+Suggests: ghostess, linuxsampler-dssi, zynaddsubfx-dssi
+Description: Proaudio packages for installing DSSI plugins, synths and virtual instruments.
+ This metapackage will install proaudio DSSI plugins packages for openstudio.
+
+Package: openstudio-proaudio-plugins-ladspa
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: amb-plugins, ambdec, ams, blepvco, blop, csladspa, fil-plugins, invada-studio-plugins-ladspa, jack-rack, jconvolver, jconvolver-config-files, ladspa-sdk, mcp-plugins, omins, rev-plugins, rubberband-ladspa, swh-plugins, tap-plugins, vco-plugins
+Suggests: autotalent, wah-plugins, zita-at1
+Description: Proaudio packages for installing LADSPA plugins, synths and virtual instruments.
+ This metapackage will install proaudio LADSPA plugins packages for openstudio.
+
+Package: openstudio-proaudio-plugins-lv2
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: calf-plugins, invada-studio-plugins-lv2, liblv2dynparamhost1-1, liblv2dynparamplugin1-0, libslv2-9, libslv2-dev, lv2core, lv2fil, lv2vocoder, slv2-doc, slv2-jack, zynjacku
+Description: Proaudio packages for installing LV2 plugins, synths and virtual instruments.
+ This metapackage will install proaudio LV2 plugins packages for openstudio.
+
+Package: openstudio-proaudio-recording
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: ardour, jackd, meterbridge, qjackctl, qtractor
+Suggests: ecasound, jack-capture, jack-mixer, jack-oscrolloscope, jokosher, non-daw, non-mixer, proaudio-plugins-ladspa, proaudio-plugins-lv2, rezound, timemachine, traverso
+Description: Proaudio packages for recording music, sounds, audio.
+
+Package: openstudio-proaudio-samplers
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: specimen
+Suggests: linuxsampler
+Description: Proaudio packages for software samplers.
+
+Package: openstudio-proaudio-soundsynthesis
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: csound, puredata
+Suggests: chuck, faust, supercollider
+Description: Proaudio packages for recording music, sounds, audio.
+
+Package: openstudio-proaudio-synths
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: ams, bristol, phasex, puredata, yoshimi
+Suggests: aeolus, amsynth, azr3-jack, genpo, linuxsampler, minicomputer, proaudio-plugins-dssi, proaudio-plugins-lv2, proaudio-samplers, zynaddsubfx
+Description: Proaudio packages with virtual instruments and synths.
+ This metapackage will install pro audio synth and virtual instruments packages for openstudio.
+
+Package: openstudio-proaudio-timestretching
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: 
+Suggests: ardour, paulstretch, qtractor, rosegarden, stretchplayer
+Description: Proaudio packages for stretching music and audio.
+
+Package: openstudio-proaudio-trackers
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: milkytracker
+Suggests: jacker, renoise
+Description: Proaudio packages for mixing and mastering your music.
+ This metapackage will install pro audio LADSPA, DSSI and LV2 plugins packages for openstudio.
 
 Package: openstudio-video
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: mplayer, vlc
-Description: debian-openstudio video  packages
- This metapackage will install Debian packages for use in 
- video of debian-openstudio.
+Recommends: blender, ffmpeg, ffmpeg2theora, xjadeo
+Suggests: gjacktransport, kdenlive, qjadeo
+Description: Openstudio Video packages
+ This metapackage will install Video software for use in 
+ openstudio.
 
