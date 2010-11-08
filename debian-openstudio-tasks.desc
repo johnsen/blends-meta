@@ -14,6 +14,7 @@ Packages: list
  pidgin
  nautilus-open-terminal
  grsync
+ thunderbird
 
 Task: openstudio-fluxbox
 Section: debian-openstudio
@@ -64,6 +65,7 @@ Packages: list
  ardour
  qtractor
  audacity
+ jack-capture
  meterbridge
  qjackctl
  jackd
@@ -97,9 +99,10 @@ Relevance: 10
 Key: 
  openstudio-proaudio-firewire
 Packages: list
- jackd
+ ffado-dbus-server
  ffado-mixer-qt4
  ffado-tools
+ a2jmidid
  libffado2
  patchage
 
@@ -127,8 +130,8 @@ Relevance: 10
 Key: 
  openstudio-proaudio-jack
 Packages: list
- jackd
  qjackctl
+ a2jmidid
  jack-tools
  alsa-tools-gui
  alsa-tools
@@ -153,9 +156,10 @@ Key:
  openstudio-proaudio-midi
 Packages: list
  qtractor
+ a2jmidid
+ jack-keyboard
  qsynth
  fluid-soundfont-gm
- yoshimi
 
 Task: openstudio-proaudio-mixing
 Section: debian-openstudio
@@ -171,6 +175,41 @@ Packages: list
  jkmeter
  meterbridge
  japa
+ jdelay
+ openstudio-proaudio-plugins-lv2
+ lv2vocoder
+ lv2fil
+ lv2core
+ libslv2-dev
+ libslv2-9
+ liblv2dynparamplugin1-0
+ liblv2dynparamhost1-1
+ invada-studio-plugins-lv2
+ slv2-doc
+ slv2-jack
+ zynjacku
+ calf-plugins
+ openstudio-proaudio-plugins-ladspa
+ blop
+ amb-plugins
+ rev-plugins
+ tap-plugins
+ wah-plugins
+ vco-plugins
+ blepvco
+ jack-rack
+ fil-plugins
+ ladspa-sdk
+ mcp-plugins
+ omins
+ swh-plugins
+ invada-studio-plugins-ladspa
+ rubberband-ladspa
+ csladspa
+ jconvolver
+ jconvolver-config-files
+ ams
+ jack-mixer
 
 Task: openstudio-proaudio-musiciantools
 Section: debian-openstudio
@@ -202,7 +241,6 @@ Relevance: 10
 Key: 
  openstudio-proaudio-plugins-ambisonics
 Packages: list
- ambdec
  amb-plugins
  ardour
  jackd
@@ -237,9 +275,9 @@ Key:
 Packages: list
  blop
  amb-plugins
- ambdec
  rev-plugins
  tap-plugins
+ wah-plugins
  vco-plugins
  blepvco
  jack-rack
@@ -285,9 +323,44 @@ Key:
 Packages: list
  ardour
  qtractor
+ jack-capture
  meterbridge
  qjackctl
  jackd
+ openstudio-proaudio-plugins-lv2
+ lv2vocoder
+ lv2fil
+ lv2core
+ libslv2-dev
+ libslv2-9
+ liblv2dynparamplugin1-0
+ liblv2dynparamhost1-1
+ invada-studio-plugins-lv2
+ slv2-doc
+ slv2-jack
+ zynjacku
+ calf-plugins
+ openstudio-proaudio-plugins-ladspa
+ blop
+ amb-plugins
+ rev-plugins
+ tap-plugins
+ wah-plugins
+ vco-plugins
+ blepvco
+ jack-rack
+ fil-plugins
+ ladspa-sdk
+ mcp-plugins
+ omins
+ swh-plugins
+ invada-studio-plugins-ladspa
+ rubberband-ladspa
+ csladspa
+ jconvolver
+ jconvolver-config-files
+ ams
+ jack-mixer
 
 Task: openstudio-proaudio-samplers
 Section: debian-openstudio
@@ -316,7 +389,6 @@ Relevance: 10
 Key: 
  openstudio-proaudio-synths
 Packages: list
- yoshimi
  phasex
  ams
  bristol

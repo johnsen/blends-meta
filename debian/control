@@ -10,8 +10,8 @@ Standards-Version: 3.9.1
 Package: openstudio-desktop
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: grsync, gtk-recordmydesktop, htop, nautilus-open-terminal, pidgin, shutter, sysv-rc-conf, wget
-Suggests: epiphany-browser, thunderbird, xchat
+Recommends: grsync, gtk-recordmydesktop, htop, nautilus-open-terminal, pidgin, shutter, sysv-rc-conf, thunderbird, wget
+Suggests: epiphany-browser, xchat
 Description: Openstudio Desktop optimization
  This metapackage will install additional Desktop software. 
 
@@ -41,8 +41,8 @@ Description: Openstudio multimedia optimization
 Package: openstudio-proaudio-audiotools
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: ardour, audacity, jackd, meterbridge, qjackctl, qtractor
-Suggests: jack-capture, mhwaveedit, proaudio-plugins-ladspa, proaudio-plugins-lv2, rezound, traverso
+Recommends: ardour, audacity, jack-capture, jackd, meterbridge, qjackctl, qtractor
+Suggests: mhwaveedit, proaudio-plugins-ladspa, proaudio-plugins-lv2, rezound, traverso
 Description: Proaudio packages for recording music, sounds, audio.
 
 Package: openstudio-proaudio-beats
@@ -63,8 +63,8 @@ Description: Openstudio pro audio DJ packages
 Package: openstudio-proaudio-firewire
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: ffado-mixer-qt4, ffado-tools, jackd, libffado2, patchage
-Suggests: a2jmidid, fado-dbus-server, jackd-firewire
+Recommends: a2jmidid, ffado-dbus-server, ffado-mixer-qt4, ffado-tools, libffado2, patchage
+Suggests: jackd2, jackd2-firewire
 Description: Openstudio pro audio firewire  packages
  This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
 
@@ -79,8 +79,8 @@ Description: Proaudio packages for installing LADSPA plugins, synths and virtual
 Package: openstudio-proaudio-jack
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: alsa-tools, alsa-tools-gui, jack-tools, jackd, qjackctl, sysv-rc-conf
-Suggests: a2jmidid, htop, patchage
+Recommends: a2jmidid, alsa-tools, alsa-tools-gui, jack-tools, qjackctl, sysv-rc-conf
+Suggests: htop, jackd2, patchage
 Description: Openstudio pro audio JACK (Jack Audio Connection Kit) and ALSA related packages
  This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
 
@@ -94,16 +94,16 @@ Description: Proaudio packages for looping music and audio.
 Package: openstudio-proaudio-midi
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: fluid-soundfont-gm, qsynth, qtractor, yoshimi
-Suggests: a2jmidid, aseqdump, jack-keyboard, jack-smf-utils, kmidimon, lmms, mididings, muse, non-sequencer, proaudio-plugins-dssi, rosegarden, seq24
+Recommends: a2jmidid, fluid-soundfont-gm, jack-keyboard, qsynth, qtractor
+Suggests: aseqdump, jack-smf-utils, kmidimon, lmms, mididings, muse, non-sequencer, proaudio-plugins-dssi, rosegarden, seq24, yoshimi
 Description: Openstudio pro audio MIDI related packages
  This metapackage will install pro audio MIDI related packages for openstudio.
 
 Package: openstudio-proaudio-mixing
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: audacity, gcdmaster, jamin, japa, jkmeter, meterbridge
-Suggests: jack-mixer, jdelay, mhwaveedit, non-mixer, rezound
+Recommends: audacity, gcdmaster, jack-mixer, jamin, japa, jdelay, jkmeter, meterbridge, openstudio-proaudio-plugins-ladspa, openstudio-proaudio-plugins-lv2
+Suggests: mhwaveedit, non-mixer, rezound
 Description: Proaudio packages for mixing and mastering your music.
  This metapackage will install pro audio LADSPA, DSSI and LV2 plugins packages for openstudio.
 
@@ -124,8 +124,8 @@ Description: Proaudio packages for recording music, sounds, audio.
 Package: openstudio-proaudio-plugins-ambisonics
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: amb-plugins, ambdec, ardour, jackd, japa, jconvolver, jconvolver-config-files, qjackctl
-Suggests: aliki, drc, non-mixer, zita-rev1
+Recommends: amb-plugins, ardour, jackd, japa, jconvolver, jconvolver-config-files, qjackctl
+Suggests: aliki, ambdec, drc, non-mixer, zita-rev1
 Description: Proaudio packages for installing LADSPA plugins, synths and virtual instruments.
  This metapackage will install proaudio LADSPA plugins packages for openstudio.
 
@@ -140,8 +140,8 @@ Description: Proaudio packages for installing DSSI plugins, synths and virtual i
 Package: openstudio-proaudio-plugins-ladspa
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: amb-plugins, ambdec, ams, blepvco, blop, csladspa, fil-plugins, invada-studio-plugins-ladspa, jack-rack, jconvolver, jconvolver-config-files, ladspa-sdk, mcp-plugins, omins, rev-plugins, rubberband-ladspa, swh-plugins, tap-plugins, vco-plugins
-Suggests: autotalent, wah-plugins, zita-at1
+Recommends: amb-plugins, ams, blepvco, blop, csladspa, fil-plugins, invada-studio-plugins-ladspa, jack-rack, jconvolver, jconvolver-config-files, ladspa-sdk, mcp-plugins, omins, rev-plugins, rubberband-ladspa, swh-plugins, tap-plugins, vco-plugins, wah-plugins
+Suggests: ambdec, autotalent, zita-at1
 Description: Proaudio packages for installing LADSPA plugins, synths and virtual instruments.
  This metapackage will install proaudio LADSPA plugins packages for openstudio.
 
@@ -155,8 +155,8 @@ Description: Proaudio packages for installing LV2 plugins, synths and virtual in
 Package: openstudio-proaudio-recording
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: ardour, jackd, meterbridge, qjackctl, qtractor
-Suggests: ecasound, jack-capture, jack-mixer, jack-oscrolloscope, jokosher, non-daw, non-mixer, proaudio-plugins-ladspa, proaudio-plugins-lv2, rezound, timemachine, traverso
+Recommends: ardour, jack-capture, jack-mixer, jackd, meterbridge, openstudio-proaudio-plugins-ladspa, openstudio-proaudio-plugins-lv2, qjackctl, qtractor
+Suggests: ecasound, jack-oscrolloscope, jokosher, non-daw, non-mixer, rezound, timemachine, traverso
 Description: Proaudio packages for recording music, sounds, audio.
 
 Package: openstudio-proaudio-samplers
@@ -176,8 +176,8 @@ Description: Proaudio packages for recording music, sounds, audio.
 Package: openstudio-proaudio-synths
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: ams, bristol, phasex, puredata, yoshimi
-Suggests: aeolus, amsynth, azr3-jack, genpo, linuxsampler, minicomputer, proaudio-plugins-dssi, proaudio-plugins-lv2, proaudio-samplers, zynaddsubfx
+Recommends: ams, bristol, phasex, puredata
+Suggests: aeolus, amsynth, azr3-jack, genpo, linuxsampler, minicomputer, proaudio-plugins-dssi, proaudio-plugins-lv2, proaudio-samplers, yoshimi, zynaddsubfx
 Description: Proaudio packages with virtual instruments and synths.
  This metapackage will install pro audio synth and virtual instruments packages for openstudio.
 
