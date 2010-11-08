@@ -2,9 +2,9 @@ Task: proaudio-firewire
 Description: Openstudio pro audio firewire  packages
  This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
 
-Depends: jackd2
+Depends: jackd
 
-Depends: jackd2-firewire
+Depends: jackd-firewire
 
 Depends: ffado-dbus-server 
 
