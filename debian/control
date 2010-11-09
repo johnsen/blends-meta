@@ -63,8 +63,7 @@ Description: Openstudio pro audio DJ packages
 Package: openstudio-proaudio-firewire
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: a2jmidid, ffado-dbus-server, ffado-mixer-qt4, ffado-tools, libffado2, patchage
-Suggests: jackd2, jackd2-firewire
+Recommends: a2jmidid, ffado-dbus-server, ffado-mixer-qt4, ffado-tools, jackd, jackd-firewire, libffado2, patchage
 Description: Openstudio pro audio firewire  packages
  This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
 
@@ -79,8 +78,8 @@ Description: Proaudio packages for installing LADSPA plugins, synths and virtual
 Package: openstudio-proaudio-jack
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: a2jmidid, alsa-tools, alsa-tools-gui, jack-tools, qjackctl, sysv-rc-conf
-Suggests: htop, jackd2, patchage
+Recommends: a2jmidid, alsa-tools, alsa-tools-gui, jack-tools, jackd, qjackctl, sysv-rc-conf
+Suggests: htop, patchage
 Description: Openstudio pro audio JACK (Jack Audio Connection Kit) and ALSA related packages
  This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
 
@@ -94,8 +93,8 @@ Description: Proaudio packages for looping music and audio.
 Package: openstudio-proaudio-midi
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: a2jmidid, fluid-soundfont-gm, jack-keyboard, qsynth, qtractor
-Suggests: aseqdump, jack-smf-utils, kmidimon, lmms, mididings, muse, non-sequencer, proaudio-plugins-dssi, rosegarden, seq24, yoshimi
+Recommends: a2jmidid, fluid-soundfont-gm, jack-keyboard, qsynth, qtractor, yoshimi
+Suggests: aseqdump, jack-smf-utils, kmidimon, lmms, mididings, muse, non-sequencer, proaudio-plugins-dssi, rosegarden, seq24
 Description: Openstudio pro audio MIDI related packages
  This metapackage will install pro audio MIDI related packages for openstudio.
 
@@ -132,8 +131,8 @@ Description: Proaudio packages for installing LADSPA plugins, synths and virtual
 Package: openstudio-proaudio-plugins-dssi
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: calf-plugins, dssi-host-jack, dssi-utils, fluidsynth-dssi, hexter, whysynth, xsynth-dssi
-Suggests: ghostess, linuxsampler-dssi, zynaddsubfx-dssi
+Recommends: calf-plugins, dssi-host-jack, dssi-utils, fluidsynth-dssi, hexter, whysynth, xsynth-dssi, zynaddsubfx-dssi
+Suggests: ghostess, linuxsampler-dssi
 Description: Proaudio packages for installing DSSI plugins, synths and virtual instruments.
  This metapackage will install proaudio DSSI plugins packages for openstudio.
 
@@ -151,6 +150,13 @@ Depends: openstudio-tasks (= ${binary:Version})
 Recommends: calf-plugins, invada-studio-plugins-lv2, liblv2dynparamhost1-1, liblv2dynparamplugin1-0, libslv2-9, libslv2-dev, lv2core, lv2fil, lv2vocoder, slv2-doc, slv2-jack, zynjacku
 Description: Proaudio packages for installing LV2 plugins, synths and virtual instruments.
  This metapackage will install proaudio LV2 plugins packages for openstudio.
+
+Package: openstudio-proaudio-realtime
+Architecture: all
+Depends: openstudio-tasks (= ${binary:Version})
+Recommends: linux-realtime
+Description: Openstudio pro audio JACK (Jack Audio Connection Kit) and ALSA related packages
+ This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
 
 Package: openstudio-proaudio-recording
 Architecture: all
@@ -176,8 +182,8 @@ Description: Proaudio packages for recording music, sounds, audio.
 Package: openstudio-proaudio-synths
 Architecture: all
 Depends: openstudio-tasks (= ${binary:Version})
-Recommends: ams, bristol, phasex, puredata
-Suggests: aeolus, amsynth, azr3-jack, genpo, linuxsampler, minicomputer, proaudio-plugins-dssi, proaudio-plugins-lv2, proaudio-samplers, yoshimi, zynaddsubfx
+Recommends: ams, bristol, phasex, puredata, yoshimi
+Suggests: aeolus, amsynth, azr3-jack, genpo, linuxsampler, minicomputer, proaudio-plugins-dssi, proaudio-plugins-lv2, proaudio-samplers, zynaddsubfx
 Description: Proaudio packages with virtual instruments and synths.
  This metapackage will install pro audio synth and virtual instruments packages for openstudio.
 

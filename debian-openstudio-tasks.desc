@@ -99,6 +99,8 @@ Relevance: 10
 Key: 
  openstudio-proaudio-firewire
 Packages: list
+ jackd
+ jackd-firewire
  ffado-dbus-server
  ffado-mixer-qt4
  ffado-tools
@@ -130,6 +132,7 @@ Relevance: 10
 Key: 
  openstudio-proaudio-jack
 Packages: list
+ jackd
  qjackctl
  a2jmidid
  jack-tools
@@ -160,6 +163,7 @@ Packages: list
  jack-keyboard
  qsynth
  fluid-soundfont-gm
+ yoshimi
 
 Task: openstudio-proaudio-mixing
 Section: debian-openstudio
@@ -261,6 +265,7 @@ Packages: list
  dssi-utils
  fluidsynth-dssi
  hexter
+ zynaddsubfx-dssi
  whysynth
  xsynth-dssi
  calf-plugins
@@ -313,6 +318,16 @@ Packages: list
  slv2-jack
  zynjacku
  calf-plugins
+
+Task: openstudio-proaudio-realtime
+Section: debian-openstudio
+Description: Openstudio pro audio JACK (Jack Audio Connection Kit) and ALSA related packages
+ This metapackage will install pro audio JACK (Jack Audio Connection Kit) and ALSA related packages for openstudio.
+Relevance: 10
+Key: 
+ openstudio-proaudio-realtime
+Packages: list
+ linux-realtime
 
 Task: openstudio-proaudio-recording
 Section: debian-openstudio
@@ -389,6 +404,7 @@ Relevance: 10
 Key: 
  openstudio-proaudio-synths
 Packages: list
+ yoshimi
  phasex
  ams
  bristol
