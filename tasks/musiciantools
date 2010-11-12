@@ -8,7 +8,7 @@ Depends: klick
 
 Depends: gtklick
 
-Depends: fmit
+Suggests: fmit
 
 Suggests: stretchplayer
 
