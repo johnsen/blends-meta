@@ -4,4 +4,5 @@ deb http://security.ubuntu.com/ubuntu lucid-security main restricted universe mu
 deb http://ppa.launchpad.net/abogani/ppa/ubuntu lucid main
 deb http://ftp5.gwdg.de/pub/opensuse/repositories/home:/roooz:/lucid/xUbuntu_10.04/ ./
 deb http://ppa.launchpad.net/openstudio10/lucid-stable/ubuntu lucid main 
+deb http://ppa.launchpad.net/puredyne-team/ppa/ubuntu lucid main 
 

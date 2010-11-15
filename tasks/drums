@@ -4,7 +4,9 @@ Description: Packages for drums & beats.
  
 Depends: hydrogen
 
-Depends: specimen 
+Depends: hydrogen-drumkits
+
+Suggests: specimen 
 
 Suggests: jackbeat
 
