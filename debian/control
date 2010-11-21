@@ -15,18 +15,18 @@ Suggests: aliki, ambdec, drc, non-mixer, zita-rev1
 Description: Packages for installing packages you need for working with ambisonics (3D surround sound) in Debian/ Ubuntu.
  This metapackage will install packages you need when working with ambisonics.
 
-Package: openstudiopro-beat
+Package: openstudiopro-composition
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: hydrogen, specimen
-Suggests: jackbeat, lmms, non-sequencer, puredata, seq24
-Description: Packages for drums & beats.
- Metapackage which installs packages for making drums and beats.
+Recommends: 
+Suggests: impro-visor, mma
+Description: Packages which might be useful when composing music.
+ Metapackage which installs packages for composing music.
 
 Package: openstudiopro-desktop
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: grsync, gtk-recordmydesktop, htop, nautilus-open-terminal, pidgin, shutter, sysv-rc-conf, thunderbird, wget
+Recommends: grsync, gtk-recordmydesktop, htop, nautilus-open-terminal, pidgin, shutter, sysv-rc-conf, thunderbird, ubuntu-restricted-extras, wget
 Suggests: epiphany-browser, xchat
 Description: Extra packages which makes the Desktop more useful or more easy to use.
  This metapackage will install additional Desktop software. 
@@ -38,6 +38,22 @@ Recommends: mixxx, xwax
 Suggests: jackeq, terminatorx
 Description: Openstudiopro DJ packages.
  This metapackage will install packages for djing. 
+
+Package: openstudiopro-drums
+Architecture: all
+Depends: openstudiopro-tasks (= ${binary:Version})
+Recommends: hydrogen, hydrogen-drumkits
+Suggests: jackbeat, lmms, non-sequencer, puredata, seq24, specimen
+Description: Packages for drums & beats.
+ Metapackage which installs packages for making drums and beats.
+
+Package: openstudiopro-drums.save
+Architecture: all
+Depends: openstudiopro-tasks (= ${binary:Version})
+Recommends: hydrogen, specimen
+Suggests: jackbeat, lmms, non-sequencer, puredata, seq24
+Description: Packages for drums & beats.
+ Metapackage which installs packages for making drums and beats.
 
 Package: openstudiopro-firewire
 Architecture: all
@@ -56,7 +72,7 @@ Description: Openstudio metapackage for installing Fluxbox Window Manager.
 Package: openstudiopro-graphics
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: gimp, gimp-data, gimp-data-extras, gimp-gap, gimp-plugin-registry, gimp-ufraw
+Recommends: gimp, gimp-data, gimp-data-extras, gimp-gap, gimp-plugin-registry, gimp-ufraw, shutter
 Suggests: agave, blender, enblend, f-spot, fontforge, fontmatrix, gnome-raw-thumbnailer, hugin, inkscape, nautilus-image-converter, pstoedit, scribus, xsane, yafray
 Description: Packages for making and editing artwork.
  This metapackage will install packages for making and editing artwork.
@@ -80,16 +96,16 @@ Description: JACK (Jack Audio Connection Kit) and ALSA related packages
 Package: openstudiopro-looping
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: kluppe, sooperlooper
-Suggests: ardour, freewheeling, rosegarden, seq24
+Recommends: sooperlooper
+Suggests: ardour, freewheeling, kluppe, non-sequencer, rosegarden, seq24, smasher
 Description: Packages for looping music and audio.
  Metapackage which installs packages with the aim to loop your audio (and midi).
 
 Package: openstudiopro-midi
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: a2jmidid, fluid-soundfont-gm, jack-keyboard, qsynth, qtractor, yoshimi
-Suggests: aseqdump, jack-smf-utils, kmidimon, lmms, mididings, muse, non-sequencer, proaudio-plugins-dssi, rosegarden, seq24
+Recommends: a2jmidid, fluid-soundfont-gm, jack-keyboard, qmidiarp, qmidicontrol, qmidiroute, qsynth, qtractor, yoshimi
+Suggests: aseqdump, jack-smf-utils, kmidimon, lmms, mididings, muse, non-sequencer, proaudio-plugins-dssi, rosegarden, seq24, swami
 Description: Openstudio pro audio MIDI related packages
  This metapackage will install pro audio MIDI related packages for openstudio.
 
@@ -97,23 +113,23 @@ Package: openstudiopro-mixing
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
 Recommends: audacity, gcdmaster, jack-mixer, jamin, japa, jdelay, jkmeter, meterbridge, openstudio-proaudio-plugins-ladspa, openstudio-proaudio-plugins-lv2
-Suggests: mhwaveedit, non-mixer, rezound
+Suggests: arpage, mhwaveedit, non-mixer, rezound
 Description: Packages for mixing and mastering your music.
  This metapackage will install software to do mixing and mastering.
 
 Package: openstudiopro-multimedia
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: moc, smplayer, vlc, vlc-plugin-jack
+Recommends: moc, smplayer, ubuntu-restricted-extras, vlc, vlc-plugin-jack
 Suggests: aqualung
 Description: Packages which makes your multimedia tools complete...
  This metapackage will install additional 'consumer' multimedia  software.
 
-Package: openstudiopro-musiciantool
+Package: openstudiopro-musiciantools
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: fmit, gtklick, klick, solfege
-Suggests: impro-visor, playitslowly, stretchplayer
+Recommends: gtklick, klick, solfege
+Suggests: fmit, impro-visor, playitslowly, stretchplayer
 Description: Packages for musicians: theory, metronome, instrumenttuner etc.
  Packages for musicians: theory, metronome, instrumenttuner etc.
 
@@ -136,15 +152,16 @@ Description: DSSI plugins, synths and virtual instruments.
 Package: openstudiopro-plugins-ladspa
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: amb-plugins, ams, blepvco, blop, csladspa, fil-plugins, invada-studio-plugins-ladspa, jack-rack, jconvolver, jconvolver-config-files, ladspa-sdk, mcp-plugins, omins, rev-plugins, rubberband-ladspa, swh-plugins, tap-plugins, vco-plugins, wah-plugins
-Suggests: ambdec, autotalent, zita-at1
+Recommends: amb-plugins, ams, autotalent, blepvco, blop, csladspa, fil-plugins, invada-studio-plugins-ladspa, jack-rack, jconvolver, jconvolver-config-files, ladspa-sdk, mcp-plugins, omins, rev-plugins, rubberband-ladspa, swh-plugins, tap-plugins, vco-plugins, wah-plugins
+Suggests: ambdec, zita-at1
 Description: Packages for installing LADSPA plugins.
  This metapackage will install proaudio LADSPA plugins.
 
 Package: openstudiopro-plugins-lv2
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: calf-plugins, invada-studio-plugins-lv2, liblv2dynparamhost1-1, liblv2dynparamplugin1-0, libslv2-9, libslv2-dev, lv2core, lv2fil, lv2vocoder, slv2-doc, slv2-jack, zynjacku
+Recommends: calf-plugins, invada-studio-plugins-lv2, liblv2dynparamhost1-1, liblv2dynparamplugin1-0, libslv2-9, libslv2-dev, lv2core, lv2fil, lv2vocoder, slv2-doc, slv2-jack, swh-lv2, zynjacku
+Suggests: mda-lv2
 Description: LV2 plugins, synths and virtual instruments.
  This metapackage will install proaudio LV2 plugins packages.
 
@@ -173,8 +190,8 @@ Description: Software samplers.
 Package: openstudiopro-soundsynthesis
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
-Recommends: csound, puredata
-Suggests: chuck, faust, supercollider
+Recommends: csladspa, csound, csound-gui, csound-utils, mmm-mode, pd-container, pd-creb, pd-cxc, pd-ext13, pd-flext, pd-gem2pdp, pd-iemlib, pd-iemmatrix, pd-lua, pd-mapping, pd-markex, pd-mjlib, pd-motex, pd-mrpeach, pd-opencv-data, pd-pdp-opencv, pd-pidip, pd-pool, pd-py, pd-readanysf, pd-windowing, pd-xsample, pd-zexy, puredata, python-csound, python-csoundac, qutecsound, supercollider, supercollider-bbcut2, supercollider-common, supercollider-common-dev, supercollider-dev, supercollider-doc, supercollider-emacs, supercollider-fougens-astrocade, supercollider-fougens-atari2600, supercollider-fougens-ay8910, supercollider-fougens-beep, supercollider-fougens-bit, supercollider-fougens-mzpokey, supercollider-fougens-pokey, supercollider-fougens-reddpcm, supercollider-fougens-redlbyl, supercollider-fougens-rednoise, supercollider-fougens-redphasor, supercollider-fougens-sid6581f, supercollider-fougens-slub, supercollider-fougens-sn76489, supercollider-gedit, supercollider-plugins, supercollider-quarks, supercollider-server, supercollider-server-dev, supercollider-vim
+Suggests: chuck, csoundx, faust, pd-abstractions, pd-arduino, pd-gem, pd-ggee, pd-gridflow, pd-hid, pd-libstdcpp, pd-lyonpotpourri, pd-msd, pd-ogg, pd-oscbank, pd-pix-opencv, pd-sigpack, pd-smlib, pd-unauthorized, supercollider-jtugens
 Description: Packages for sound synthesis.
 
 Package: openstudiopro-synths
@@ -196,14 +213,14 @@ Package: openstudiopro-trackers
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
 Recommends: milkytracker
-Suggests: jacker
+Suggests: jacker, schism
 Description: Vertical MIDI sequencers, or Trackers if you want.
 
 Package: openstudiopro-video
 Architecture: all
 Depends: openstudiopro-tasks (= ${binary:Version})
 Recommends: blender, ffmpeg, ffmpeg2theora, xjadeo
-Suggests: gjacktransport, kdenlive, qjadeo
+Suggests: dvgrab, freemix, gjacktransport, kdenlive, kino, lives, qjadeo, stopmotion, subtitleeditor
 Description: Openstudio Video packages
  This metapackage will install Video software. Some are especially usefull to combine video and sound.
 
