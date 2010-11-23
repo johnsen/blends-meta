@@ -15,3 +15,5 @@ Depends: conky
 Depends: xfce4-power-manager
 
 Depends: wmctrl
+
+Depends: fbdesk
