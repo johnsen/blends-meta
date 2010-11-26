@@ -1,0 +1,7 @@
+Task: Openstudiopro-realtime
+Description: This packages installs a realtime kernel for low latency.
+ This metapackage will install a realtime kernel for low latency.
+
+Depends: linux-realtime
+
+Depends: rtirq
